@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTI Brief | Tratado das Águas do Indo — Alessandra Werneck</title>
+  <style>
+    :root {
+      --bg: #fdfbfc;
+      --surface: #ffffff;
+      --text: #1f242d;
+      --muted: #5a6475;
+      --accent: #b83b6b;
+      --accent-soft: #f9eaf0;
+      --border: #e6dde2;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .back-link {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .back-link:hover { text-decoration: underline; }
+    .lang-toggle {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+      color: #11151c;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+    .bluf-box {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 2rem;
+    }
+    .bluf-box h2 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    section { margin-bottom: 1.75rem; }
+    h2 {
+      font-size: 1.2rem;
+      color: #11151c;
+      margin-bottom: 0.65rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+    }
+    p { margin-bottom: 0.85rem; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.85rem; }
+    li { margin-bottom: 0.55rem; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .hidden { display: none; }
+    @media (max-width: 600px) {
+      .container { padding: 1.5rem 1.25rem; }
+      h1 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <a href="index.html" class="back-link">&larr; Voltar para o início / Back to Home</a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">PT-BR</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+
+    <!-- VERSÃO PORTUGUÊS -->
+    <article id="content-pt">
+      <span class="badge">CTI Brief &bull; Geopolítica &amp; Cibersegurança</span>
+      <h1>Securitização Hídrica no Tratado das Águas do Indo e Riscos de Ciberespionagem no Sul da Ásia</h1>
+      <p class="meta"><strong>Autora:</strong> Alessandra Werneck &bull; Relações Internacionais &amp; Cyber Threat Intelligence (CTI)</p>
+
+      <div class="bluf-box">
+        <h2>1. BLUF (Bottom Line Up Front — Resumo Executivo)</h2>
+        <p>A escalada das tensões em torno da suspensão e revisão do Tratado das Águas do Indo (IWT) entre Índia e Paquistão cria um ambiente de <strong>alta probabilidade</strong> para campanhas bilaterais de ciberespionagem no curto prazo. Estima-se, com <strong>alta confiança</strong>, que atores estatais e grupos persistentes avançados (APTs) de ambos os países priorizem operações de <em>spear-phishing</em> contra órgãos governamentais, diplomáticos e operadores de infraestrutura crítica (energia e gestão hídrica), buscando vantagem informacional e mapeamento estratégico.</p>
+      </div>
+
+      <section>
+        <h2>2. Contexto Geopolítico (O Gatilho)</h2>
+        <p>Historicamente resiliente mesmo durante conflitos armados, o Tratado das Águas do Indo (1960) entrou em zona de atrito agudo após a suspensão de mecanismos de cooperação e compartilhamento de dados hidrológicos por Nova Délhi, somada ao avanço de projetos hidrelétricos a montante.</p>
+        <p>Para Islamabad, restrições ou imprevisibilidade no fluxo hídrico representam vulnerabilidade econômica e agrícola direta. No tabuleiro internacional, disputas assimétricas dessa magnitude raramente permanecem restritas à diplomacia tradicional, transbordando rapidamente para o domínio cibernético.</p>
+      </section>
+
+      <section>
+        <h2>3. Cenário de Ameaças Cibernéticas (Atores e TTPs)</h2>
+        <ul>
+          <li><strong>Ciberespionagem Direcionada (Prioridade Alta):</strong> Grupos historicamente ativos na região (como <em>APT36/Transparent Tribe</em> e <em>SideWinder/Bitter</em>) utilizam campanhas de <em>spear-phishing</em> com iscas temáticas — documentos diplomáticos falsos, relatórios hídricos ou alertas governamentais — para comprometer credenciais e extrair inteligência estratégica.</li>
+          <li><strong>Infraestrutura Crítica e Energia (Prioridade Moderada a Alta):</strong> Sistemas ligados à geração hidrelétrica e redes de distribuição de energia tornam-se alvos de reconhecimento digital e intrusão silenciosa, visando mapear dependências operacionais.</li>
+          <li><strong>Hacktivismo e DDoS (Ruído Político):</strong> Paralelamente à espionagem silenciosa, coletivos hacktivistas costumam realizar ataques de DDoS e desfiguração (<em>defacement</em>) de portais públicos como demonstração simbólica de força.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Impacto Corporativo e Visão de GRC</h2>
+        <p>Empresas multinacionais, consultorias de engenharia, fornecedores de tecnologia operacional (OT) e parceiros logísticos que atuam na cadeia de suprimentos da Índia ou do Paquistão enfrentam risco elevado de comprometimento indireto (<em>supply chain attacks</em>) e exposição de dados contratuais.</p>
+      </section>
+
+      <section>
+        <h2>5. Recomendações de Mitigação</h2>
+        <ul>
+          <li><strong>Defesa contra Engenharia Social:</strong> Reforçar filtros de e-mail e treinamentos contra <em>spear-phishing</em> temático para equipes com interfaces governamentais ou regionais.</li>
+          <li><strong>Controle de Identidade e Acesso:</strong> Exigir Autenticação Multifator (MFA) resistente a phishing em todas as contas corporativas e acessos remotos.</li>
+          <li><strong>Gestão de Riscos de Terceiros (GRC):</strong> Auditar o nível de maturidade cibernética de fornecedores e parceiros locais na região do Sul da Ásia.</li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- ENGLISH VERSION -->
+    <article id="content-en" class="hidden">
+      <span class="badge">CTI Executive Brief &bull; Geopolitics &amp; Cybersecurity</span>
+      <h1>Hydropolitical Tensions Over the Indus Waters Treaty and Bilateral Cyber Espionage Risks</h1>
+      <p class="meta"><strong>Author:</strong> Alessandra Werneck &bull; International Relations &amp; Cyber Threat Intelligence (CTI)</p>
+
+      <div class="bluf-box">
+        <h2>1. BLUF (Bottom Line Up Front)</h2>
+        <p>Ongoing geopolitical friction surrounding the suspension and dispute over the Indus Waters Treaty (IWT) between India and Pakistan creates a <strong>high-probability</strong> environment for bilateral cyber espionage in the near term. We assess with <strong>high confidence</strong> that state-nexus Advanced Persistent Threats (APTs) on both sides will prioritize targeted <em>spear-phishing</em> campaigns against government entities, diplomatic personnel, and critical infrastructure operators (energy and water management) to gain strategic intelligence and map operational vulnerabilities.</p>
+      </div>
+
+      <section>
+        <h2>2. Geopolitical Context (The Trigger)</h2>
+        <p>Long regarded as a durable framework despite bilateral hostilities, the 1960 Indus Waters Treaty entered a critical phase following India’s suspension of treaty participation and hydrological data sharing, alongside upstream hydropower developments.</p>
+        <p>For Pakistan, reduced water predictability poses an acute economic and agricultural security challenge. In modern statecraft, asymmetric resource disputes frequently spill over into cyberspace as states seek asymmetric intelligence leverage.</p>
+      </section>
+
+      <section>
+        <h2>3. Cyber Threat Landscape (Actors &amp; TTPs)</h2>
+        <ul>
+          <li><strong>Targeted Cyber Espionage (High Likelihood):</strong> Regional threat clusters (such as <em>APT36/Transparent Tribe</em> and <em>SideWinder/Bitter</em>) routinely leverage geopolitical lures—disguised as diplomatic cables, water-flow assessments, or policy briefs—via <em>spear-phishing</em> to harvest credentials and exfiltrate sensitive data.</li>
+          <li><strong>Critical Infrastructure &amp; Energy Sector (Moderate-to-High Likelihood):</strong> Power grids and hydropower management networks face heightened reconnaissance activity aimed at mapping industrial control dependencies.</li>
+          <li><strong>Hacktivism &amp; DDoS Noise:</strong> Alongside covert intelligence collection, ideologically motivated hacktivists are likely to conduct disruptive DDoS and website defacement operations against public-facing portals.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Corporate &amp; GRC Implications</h2>
+        <p>Multinational corporations, engineering contractors, and IT/OT service providers operating across South Asian supply chains face elevated exposure to third-party intrusion and intellectual property theft.</p>
+      </section>
+
+      <section>
+        <h2>5. Defensive Recommendations</h2>
+        <ul>
+          <li><strong>Phishing Resilience:</strong> Deploy advanced email filtering and targeted awareness alerts regarding geopolitical/diplomatic phishing lures.</li>
+          <li><strong>Identity Hardening:</strong> Enforce phishing-resistant Multi-Factor Authentication (MFA) across all privileged and remote accounts.</li>
+          <li><strong>Third-Party Risk Management (GRC):</strong> Review vendor access controls and security posture for partners operating in India and Pakistan.</li>
+        </ul>
+      </section>
+    </article>
+
+    <footer>
+      <span>&copy; 2026 Alessandra Werneck &bull; alewerneck.com.br</span>
+      <span>OSINT &amp; Geopolitical Threat Analysis</span>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('content-pt').classList.toggle('hidden', lang !== 'pt');
+      document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
